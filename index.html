@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NOVOPOLO Cloud – Property & Operations Management</title>
+  <meta name="description" content="NOVOPOLO Cloud is a SaaS built on Google Cloud, Firebase, AppSheet and Google Workspace for real estate & facility management, document control, and cross‑department workflows." />
+  <meta name="author" content="T33 Tech" />
+  <meta name="robots" content="index,follow" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b1220;--muted:#0f172a;--card:#0c1426;--text:#e2e8f0;--sub:#94a3b8;--brand:#39bdf8;--accent:#22c55e;--warn:#f59e0b;--danger:#ef4444;--ring:rgba(57,189,248,.35)
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1200px;margin:0 auto;padding:24px}
+    .grid{display:grid;gap:24px}
+    .hero{padding:64px 0}
+    .badge{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border:1px solid #1f2937;border-radius:999px;background:linear-gradient(180deg,#0c1426,#0b1428)}
+    .title{font-size:clamp(28px,4vw,44px);line-height:1.05;margin:12px 0 8px}
+    .lead{color:var(--sub);font-size:clamp(16px,2.2vw,19px)}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+    .btn{appearance:none;border:1px solid #1f2937;background:linear-gradient(180deg,#101a31,#0c1426);color:var(--text);padding:12px 16px;border-radius:12px;font-weight:600}
+    .btn:hover{box-shadow:0 0 0 3px var(--ring)}
+    .btn.primary{background:linear-gradient(180deg,#1b3a58,#14263e);border-color:#204a74}
+
+    .card{background:linear-gradient(180deg,#0c1426,#0b1220);border:1px solid #1f2937;border-radius:16px;padding:18px}
+    .card h3{margin:0 0 6px;font-size:18px}
+    .sub{color:var(--sub)}
+    .section{padding:16px 0 42px}
+    .section h2{font-size:22px;margin:0 0 14px}
+
+    .features{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .list{margin:8px 0 0;padding-left:18px}
+    .list li{margin:6px 0}
+    .pill{display:inline-block;margin:4px 6px 0 0;padding:6px 10px;border-radius:999px;border:1px solid #1f2937;background:#0e192f;color:#cbd5e1;font-size:13px}
+
+    .cols{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:13px;background:#0a1020;border:1px solid #1f2937;border-radius:12px;padding:14px;overflow:auto}
+
+    .footer{padding:36px 0;color:#94a3b8;border-top:1px solid #1f2937}
+
+    /* simple inline "diagram" */
+    .diagram{display:grid;gap:12px}
+    .diagram .lane{display:flex;gap:12px;flex-wrap:wrap}
+    .diagram .node{border:1px solid #1f2937;background:#0e192f;padding:10px 12px;border-radius:12px}
+
+    .logo-row{display:flex;flex-wrap:wrap;gap:10px}
+    .logo{border:1px solid #1f2937;background:#0e192f;border-radius:10px;padding:8px 10px;font-size:13px;color:#cbd5e1}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"SoftwareApplication",
+    "name":"NOVOPOLO Cloud – Property & Operations Management",
+    "applicationCategory":"BusinessApplication",
+    "operatingSystem":"Any",
+    "creator":{"@type":"Organization","name":"T33 Tech","url":"https://t33.tech"},
+    "softwareVersion":"1.0",
+    "offers":{"@type":"Offer","price":"Contact","priceCurrency":"USD"}
+  }
+  </script>
+</head>
+<body>
+  <header class="wrap hero">
+    <span class="badge">Built on Google Cloud & Workspace</span>
+    <h1 class="title">NOVOPOLO Cloud<br/>Property & Operations Management</h1>
+    <p class="lead">SaaS for real estate & facility operations. Hierarchical portfolio (condominium → block → unit), document lifecycle & digital signatures, service orders, inter‑department workflows, and executive dashboards — all powered by Firebase, AppSheet and Google Workspace.</p>
+    <div class="cta">
+      <a class="btn primary" href="#contact">Talk to Sales</a>
+      <a class="btn" href="#architecture">See architecture</a>
+      <a class="btn" href="#google">Google products</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="section">
+      <div class="grid features">
+        <div class="card">
+          <h3>Core capabilities</h3>
+          <ul class="list">
+            <li>Portfolio model: <strong>Condominium → Building/Block → Unit</strong> with ownership rotation.</li>
+            <li>Document control: contracts, permits, service orders, expirations, versioning and retention (5–10 years).</li>
+            <li>Digital signing: Gov.br compatible (via external provider) and audit trail.</li>
+            <li>Operational flows between departments (HR → Finance, Facilities → Rentals, etc.).</li>
+            <li>Notifications: Gmail templates & Google Chat Webhooks by business area.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Data & security</h3>
+          <ul class="list">
+            <li>RBAC with Firebase Authentication & Custom Claims.</li>
+            <li>Firestore rules (least privilege) & Cloud Functions validators.</li>
+            <li>LGPD‑aligned: purpose limitation, access logs, retention & data subject requests.</li>
+            <li>Backups & vault policy for user data and documents.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Analytics & governance</h3>
+          <ul class="list">
+            <li>Operational KPIs in Looker Studio (Data Studio).</li>
+            <li>Executive exports: HTML, Canva/PPTX packs for board reports.</li>
+            <li>SLA monitoring for expiring documents and service orders.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="google" class="section">
+      <h2>Google products used</h2>
+      <div class="logo-row">
+        <span class="logo">Firebase (Auth, Firestore, Functions, Hosting)</span>
+        <span class="logo">AppSheet (automations & apps)</span>
+        <span class="logo">Google Workspace (Gmail, Drive, Chat, Sheets, Docs)</span>
+        <span class="logo">Looker Studio</span>
+        <span class="logo">Cloud Storage</span>
+        <span class="logo">Cloud Run (optional microservices)</span>
+      </div>
+    </section>
+
+    <section id="architecture" class="section">
+      <h2>Reference architecture</h2>
+      <div class="diagram">
+        <div class="lane">
+          <div class="node">Web App (Firebase Hosting, React/Next)</div>
+          <div class="node">Mobile App (AppSheet)</div>
+          <div class="node">Admin Panel</div>
+        </div>
+        <div class="lane">
+          <div class="node">Firebase Auth (RBAC & SSO)</div>
+          <div class="node">Firestore (multi‑tenant data)</div>
+          <div class="node">Cloud Functions (validations / webhooks)</div>
+          <div class="node">Cloud Storage (files)</div>
+        </div>
+        <div class="lane">
+          <div class="node">Workspace: Gmail Templates</div>
+          <div class="node">Workspace: Drive (docs)</div>
+          <div class="node">Google Chat Webhooks</div>
+          <div class="node">Looker Studio Dashboards</div>
+        </div>
+      </div>
+      <p class="sub" style="margin-top:8px">Optional: Cloud Run services for integrations (e.g., Gov.br signature provider) and batch processing.</p>
+    </section>
+
+    <section class="section">
+      <h2>Feature highlights</h2>
+      <div class="grid cols">
+        <div class="card">
+          <h3>Property resources catalog</h3>
+          <p class="sub">Custom taxonomy (e.g., barbecue grill, garage, garden, alarm, service area…) to standardize listings and inspections.</p>
+          <div>
+            <span class="pill">Resource tagging</span>
+            <span class="pill">Checklists</span>
+            <span class="pill">Media uploads</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Document lifecycle</h3>
+          <p class="sub">Digitized artifacts with versions, expirations, signer roles and storage policies (5–10 years).</p>
+          <div>
+            <span class="pill">Versioning</span>
+            <span class="pill">Expiration alerts</span>
+            <span class="pill">Audit trail</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Cross‑department workflows</h3>
+          <p class="sub">Tickets and approvals across HR, Finance, Facilities and Rentals. Automation via AppSheet + Cloud Functions.</p>
+          <div>
+            <span class="pill">SLA</span>
+            <span class="pill">Approvals</span>
+            <span class="pill">Notifications</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Messaging</h3>
+          <p class="sub">Centralized messaging hub with Gmail templates and Google Chat channels per area (payloads ready).</p>
+          <div>
+            <span class="pill">Templates</span>
+            <span class="pill">Webhooks</span>
+            <span class="pill">Targets by area</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Sample Gmail template (simplified)</h2>
+      <pre class="mono">Subject: [NOVOPOLO] Document expiring – {{document_name}}
+
+Hello {{recipient_name}},
+The document <{{document_name}}> related to unit {{unit_id}} will expire on {{due_date}}.
+Please review and renew it in the NOVOPOLO portal.
+
+Action link: {{portal_url}}
+— Automated notice via Gmail + Cloud Functions</pre>
+    </section>
+
+    <section class="section">
+      <h2>Compliance</h2>
+      <ul class="list">
+        <li>LGPD: data minimization, purpose limitation, access logs and incident response plan.</li>
+        <li>Role‑based access and consent records for data subjects.</li>
+        <li>Immutable audit logs for critical events and sign-offs.</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="grid cols">
+        <div class="card">
+          <h3>T33 Tech</h3>
+          <p class="sub">Site: <a href="https://t33.tech" target="_blank" rel="noopener">t33.tech</a></p>
+          <p class="sub">Email: <a href="mailto:tiago@t33.tech">tiago@t33.tech</a> • <a href="mailto:contato@t33.tech">contato@t33.tech</a></p>
+        </div>
+        <div class="card">
+          <h3>Deployment</h3>
+          <p class="sub">Host this page on Hostinger (static). The application runs on Firebase (Hosting, Auth, Firestore, Functions) with AppSheet mobile/ops apps and Google Workspace integrations.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <small>© <span id="y"></span> T33 Tech. NOVOPOLO Cloud – built on Google Cloud & Workspace.</small>
+  </footer>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
